@@ -1,0 +1,138 @@
+/*RESET STYLING*/
+
+/*Grab font family from google fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+* {
+  /* Target everything*/
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  color: rgb(85, 85, 85);
+}
+
+/*TRANSITION*/
+
+a,
+.btn {
+  /*Target links and buttons*/
+  transition: all 300ms ease;
+}
+
+/*DESKTOP NAV*/
+/*
+
+Makes a Box a Flex Container: When you use display: flex; on a box (let's call it the parent box), it turns that box into a flex container. It's like saying, "Hey, container, get ready to organize your children!"
+
+Lining Up Items Horizontally by Default: By default, when you turn a container into a flex container, its children (the items inside it) line up horizontally in a row. So, if you have three items inside a flex container, they'll naturally line up side by side.
+
+Flexibility in Sizing: With display: flex;, you have some cool powers to control how your items grow and shrink. You can tell some items to grow more and others less, or even tell them to stay a fixed size.
+
+Easy Alignment: Flexbox also helps you align your items easily. You can make them all stick to the left, right, or center of the container. You can even spread them out evenly.
+
+Changing the Order: Another neat thing is that you can change the order of your items without changing the HTML. So if you want item 3 to appear before item 2, you can do that with flexbox.
+
+*/
+nav,
+.nav-links {
+  /*TARGET nav element and class navlinks (precede with ".")*/
+  display: flex;
+}
+
+nav {
+  justify-content: space-around;
+  align-items: center;
+  height: 17vh; /* Takes 17% of page height */
+}
+
+.nav-links {
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  text-decoration-color: white;
+}
+
+a:hover {
+  color: grey;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: rgb(181, 181, 181);
+}
+
+.logo {
+  font-size: 2rem;
+}
+
+.logo:hover {
+  cursor: default;
+}
+
+/* HAMBURGER MENU */
+
+#hamburger-nav {
+  display: none;
+}
+
+.hamburger-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.hamburger-icon span {
+  width: 100px;
+  height: 2px;
+  background-color: black;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links {
+  position: absolute;
+  top: 100px;
+  right: 0;
+  background-color: white;
+  width: fit-content;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links li {
+  list-style: none;
+}
+
+.menu-links.open {
+  max-height: 3000px;
+}
