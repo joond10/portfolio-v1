@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Personal Portfolio</title>
+    <title>Joon Dong</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
     <nav id="desktop-nav">
-      <div class="logo">Joon</div>
+      <div class="logo"></div>
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
@@ -38,20 +38,20 @@
     </nav>
     <section id="profile">
       <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
+        <img class="me" src="./assets/joon.jpg" alt="Joon profile picture" />
       </div>
       <div class="section__text">
-        <p class="section__text__p1">Hello I'm</p>
+        <p class="section__text__p1">Hello, I'm</p>
         <h1 class="title">Joon Dong</h1>
         <p class="section__text__p2">Computer programming student</p>
         <div class="btn-container">
           <button
             class="btn btn-color-2"
-            onclick="window.open('./assets/resume-example.pdf')"
+            onclick="window.open('./assets/Resume.pdf')"
           >
             Download CV
           </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          <button class="btn btn-color-1" onclick="location.href='./#contacts'">
             Contact Info
           </button>
         </div>
@@ -75,13 +75,13 @@
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About</h1>
       <div class="section-container">
-        <div class="section__pic-container">
+        <!-- <div class="section__pic-container">
           <img
             src="./assets/about-pic.png"
             alt="Profile picture"
             class="about-pic"
           />
-        </div>
+        </div> -->
         <div class="about-details-container">
           <div class="about-containers">
             <div class="details-container">
@@ -91,7 +91,7 @@
                 class="icon"
               />
               <h3>Experience</h3>
-              <p>2+ years<br />Frontend Development</p>
+              <p>5+ years<br />Customer Service</p>
             </div>
             <div class="details-container">
               <img
@@ -108,12 +108,20 @@
           </div>
           <div class="text-container">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum eum
-              quas necessitatibus iusto deserunt neque ducimus nobis, rerum,
-              tenetur repudiandae aliquid! Inventore repellat, deleniti optio
-              magnam nulla ratione minus et libero, hic eum animi fuga ex?
-              Corrupti veritatis autem sint deleniti quos odit ducimus! Tenetur,
-              inventore. Debitis eos harum odio.
+              As a dedicated computer programming student, I am fueled by a
+              passion for learning <strong>every single day</strong> whether that be on my own or through school. Backed by a robust
+              background in customer service and management, I have proven
+              ability to work as part of a team in a fast-paced environment
+              requiring excellent communication, leadership, and interpersonal
+              skills. I am currently learning from courses which cover:
+              <br>
+              <br>
+              <ul class="courses">
+                <li><p>Advanced Database Systems (DBS311)<p/></li>
+                <li><p>Object-Oriented Software Development Using C++ (OOP345)<p/></li>
+                <li><p>Software Analysis and Design - I (SYD366)<p/></li>
+                <li><p>Web Programming Tools and Frameworks (WEB322)<p/></li>
+              </ul>
             </p>
           </div>
         </div>
@@ -234,7 +242,7 @@
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
-        onclick="location.href='./#experience'"
+        onclick="location.href='./#projects'"
       />
     </section>
     <section id="projects">
@@ -245,22 +253,23 @@
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/project-1.png"
+                src="./assets/action.gif"
                 alt="project 1"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project One</h2>
+            <h2 class="experience-sub-title project-title">DUEL! Web Application</h2>
+            <h3 class="experience-sub-title">JS/HTML/CSS</h3>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com'"
+                onclick="location.href='https://github.com/joond10/turnbased-rpg'"
               >
                 Github
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com'"
+                onclick="location.href='https://duel-rpg.vercel.app/'"
               >
                 Live Demo
               </button>
@@ -269,49 +278,42 @@
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/project-2.png"
+                src="./assets/functionality.gif"
                 alt="project 2"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <h2 class="experience-sub-title project-title">Typing Speed  Application</h2>
+            <h3 class="experience-sub-title">Java</h3>
+
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com'"
+                onclick="location.href='https://github.com/joond10/typing-speed'"
               >
                 Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com'"
-              >
-                Live Demo
               </button>
             </div>
           </div>
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/project-3.png"
+                src="./assets/delete.gif"
                 alt="project 3"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <h2 class="experience-sub-title project-title">Gym Tracker Application</h2>
+            <h3 class="experience-sub-title">C</h3>
+
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com'"
+                onclick="location.href='https://github.com/joond10/gym-tracker'"
               >
                 Github
               </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com'"
-              >
-                Live Demo
-              </button>
+
             </div>
           </div>
         </div>
@@ -320,9 +322,44 @@
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
-        onclick="location.href='./#experience'"
+        onclick="location.href='./#contacts'"
       />
     </section>
+    <section id="contacts">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a class="socials-text" href="mailto:joon.d10@outlook.com">joon.d10@outlook.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a class="socials-text" href="https://www.linkedin.com/in/joon-dong/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Joon Dong. All Rights Reserved.</p>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>
