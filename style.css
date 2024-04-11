@@ -419,6 +419,9 @@ article .icon {
   border-color: rgb(163, 163, 163);
 }
 
+.github-live-button {
+  color: black;
+}
 /* CONTACT */
 
 #contacts {
