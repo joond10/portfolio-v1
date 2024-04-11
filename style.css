@@ -320,6 +320,14 @@ section {
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.2s;
+}
+
+.details-container:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 10);
+  transform: scale(1.05);
+  transition: all 0.4s ease-in-out;
 }
 
 .section-container {
@@ -391,7 +399,7 @@ article .icon {
   border-radius: 0.5rem;
   width: 90%;
   height: 250px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.2s;
 }
 
